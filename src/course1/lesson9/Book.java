@@ -40,4 +40,9 @@ public class Book {
         Book otherBook = (Book) other;
         return name.equals(otherBook.name)&&(author.equals(otherBook.author));
     }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(name, author);
+    }
 }

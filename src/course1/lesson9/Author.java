@@ -29,4 +29,9 @@ public class Author {
         Author otherAuthor = (Author) other;
         return name.equals(otherAuthor.name)&&(surname.equals(otherAuthor.surname));
     }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(name, surname);
+    }
 }
