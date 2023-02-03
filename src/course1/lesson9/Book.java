@@ -1,8 +1,8 @@
 package course1.lesson9;
 
 public class Book {
-    private String name;
-    private Author author;
+    private final String name;
+    private final Author author;
     private int pubYear;
 
     public Book (String name, Author author, int pubYear) {
@@ -27,4 +27,8 @@ public class Book {
         this.pubYear = pubYear;
     }
 
+    @Override
+    public String toString () {
+        return author + " '" + name + "'" + ", " + pubYear;
+    }
 }
