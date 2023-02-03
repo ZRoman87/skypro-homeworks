@@ -31,4 +31,13 @@ public class Book {
     public String toString () {
         return author + " '" + name + "'" + ", " + pubYear;
     }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book otherBook = (Book) other;
+        return name.equals(otherBook.name)&&(author.equals(otherBook.author));
+    }
 }
