@@ -1,5 +1,7 @@
 package course1.lesson9;
 
+import java.util.Objects;
+
 public class Book {
     private final String name;
     private final Author author;
@@ -33,16 +35,17 @@ public class Book {
     }
 
     @Override
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
+    public boolean equals(Object o) {
+        if (o == null || this.getClass() != o.getClass()) {
             return false;
         }
-        Book otherBook = (Book) other;
-        return name.equals(otherBook.name)&&(author.equals(otherBook.author));
+        Book book = (Book) o;
+       // return name.equals(book.name)&&(author.equals(book.author));
+        return Objects.equals(name, book.name) && Objects.equals(author, book.author);
     }
 
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(name, author);
+        return Objects.hash(name, author);
     }
 }
