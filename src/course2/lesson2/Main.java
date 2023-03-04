@@ -88,13 +88,13 @@ public class Main {
 
 
         for (int i = 0; i < gryffindorStudents.length; i++) {
-            if (gryffindorStudents[i] != null & gryffindorStudents[i].studentSurname.equals(surname1)) {
+            if (gryffindorStudents[i] != null & gryffindorStudents[i].getStudentSurname().equals(surname1)) {
                 faculty1  = "Gryffindor";
                 studentName1 = gryffindorStudents[i].getStudentName();
                 studentSurname1 = gryffindorStudents[i].getStudentSurname();
                 powerOfMagic1 = gryffindorStudents[i].getPowerOfMagic();
                 distanceOfApparition1 = gryffindorStudents[i].getDistanceOfApparition();
-            } else if (gryffindorStudents[i].studentSurname.equals(surname2)) {
+            } else if (gryffindorStudents[i].getStudentSurname().equals(surname2)) {
                 faculty2  = "Gryffindor";
                 studentName2 = gryffindorStudents[i].getStudentName();
                 studentSurname2 = gryffindorStudents[i].getStudentSurname();
@@ -104,13 +104,13 @@ public class Main {
         }
 
         for (int i = 0; i < slitherinStudents.length; i++) {
-            if (slitherinStudents[i] != null & slitherinStudents[i].studentSurname.equals(surname1)) {
+            if (slitherinStudents[i] != null & slitherinStudents[i].getStudentSurname().equals(surname1)) {
                 faculty1  = "Slytherin";
                 studentName1 = slitherinStudents[i].getStudentName();
                 studentSurname1 = slitherinStudents[i].getStudentSurname();
                 powerOfMagic1 = slitherinStudents[i].getPowerOfMagic();
                 distanceOfApparition1 = slitherinStudents[i].getDistanceOfApparition();
-            } else if (slitherinStudents[i].studentSurname.equals(surname2)) {
+            } else if (slitherinStudents[i].getStudentSurname().equals(surname2)) {
                 faculty2  = "Slytherin";
                 studentName2 = slitherinStudents[i].getStudentName();
                 studentSurname2 = slitherinStudents[i].getStudentSurname();
@@ -120,13 +120,13 @@ public class Main {
         }
 
         for (int i = 0; i < hufflepuffStudents.length; i++) {
-            if (hufflepuffStudents[i] != null & hufflepuffStudents[i].studentSurname.equals(surname1)) {
+            if (hufflepuffStudents[i] != null & hufflepuffStudents[i].getStudentSurname().equals(surname1)) {
                 faculty1  = "Hufflepuff";
                 studentName1 = hufflepuffStudents[i].getStudentName();
                 studentSurname1 = hufflepuffStudents[i].getStudentSurname();
                 powerOfMagic1 = hufflepuffStudents[i].getPowerOfMagic();
                 distanceOfApparition1 = hufflepuffStudents[i].getDistanceOfApparition();
-            } else if (hufflepuffStudents[i].studentSurname.equals(surname2)) {
+            } else if (hufflepuffStudents[i].getStudentSurname().equals(surname2)) {
                 faculty2  = "Hufflepuff";
                 studentName2 = hufflepuffStudents[i].getStudentName();
                 studentSurname2 = hufflepuffStudents[i].getStudentSurname();
@@ -136,13 +136,13 @@ public class Main {
         }
 
         for (int i = 0; i < ravenclawStudents.length; i++) {
-            if (ravenclawStudents[i] != null & ravenclawStudents[i].studentSurname.equals(surname1)) {
+            if (ravenclawStudents[i] != null & ravenclawStudents[i].getStudentSurname().equals(surname1)) {
                 faculty1  = "Ravenclaw";
                 studentName1 = ravenclawStudents[i].getStudentName();
                 studentSurname1 = ravenclawStudents[i].getStudentSurname();
                 powerOfMagic1 = ravenclawStudents[i].getPowerOfMagic();
                 distanceOfApparition1 = ravenclawStudents[i].getDistanceOfApparition();
-            } else if (ravenclawStudents[i].studentSurname.equals(surname2)) {
+            } else if (ravenclawStudents[i].getStudentSurname().equals(surname2)) {
                 faculty2  = "Ravenclaw";
                 studentName2 = ravenclawStudents[i].getStudentName();
                 studentSurname2 = ravenclawStudents[i].getStudentSurname();

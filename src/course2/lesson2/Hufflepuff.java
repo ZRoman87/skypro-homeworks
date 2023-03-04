@@ -1,9 +1,9 @@
 package course2.lesson2;
 
 public class Hufflepuff extends Hogwarts {
-    int hardworking;
-    int loyal;
-    int honest;
+    private int hardworking;
+    private int loyal;
+    private int honest;
 
     public Hufflepuff(String studentName, String studentSurname, int powerOfMagic, int distanceOfApparition, int hardworking, int loyal, int honest) {
         super(studentName, studentSurname, powerOfMagic, distanceOfApparition);

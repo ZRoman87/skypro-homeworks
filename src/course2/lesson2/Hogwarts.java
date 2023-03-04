@@ -1,10 +1,10 @@
 package course2.lesson2;
 
 public class Hogwarts {
-    String studentName;
-    String studentSurname;
-    int powerOfMagic;
-    int distanceOfApparition;
+    private String studentName;
+    private String studentSurname;
+    private int powerOfMagic;
+    private int distanceOfApparition;
 
     public Hogwarts(String studentName, String studentSurname, int powerOfMagic, int distanceOfApparition) {
         this.studentName = studentName;
